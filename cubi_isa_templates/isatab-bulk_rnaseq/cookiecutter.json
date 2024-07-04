@@ -1,0 +1,45 @@
+{
+  "investigation_title": "Descriptive Title",
+  "sample_names": "Sample1,Sample2",
+  "measurement_type": [
+      "RNA-seq assay",
+      "direct RNA sequencing assay"
+  ],
+  "_measurement_types": {
+      "RNA-seq assay" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0001271",
+         "source" : "OBI"
+      },
+      "direct RNA sequencing assay" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0002629",
+         "source" : "OBI"
+      }
+  },
+  "technology_type": "RNA-seq",
+  "platform": [
+        "LS454",
+        "ABI_SOLID",
+        "BGISEQ",
+        "CAPILLARY",
+        "COMPLETE_GENOMICS",
+        "DNBSEQ",
+        "ELEMENT",
+        "GENAPSYS",
+        "GENEMIND",
+        "HELICOS",
+        "ILLUMINA",
+        "ION_TORRENT",
+        "OXFORD_NANOPORE",
+        "PACBIO_SMRT",
+        "TAPESTRI",
+        "ULTIMA",
+        "VELA_DIAGNOSTICS"
+  ],
+  "instrument": "",
+  "center_name": "",
+  "center_contact": "",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|replace('/', '_')}}",
+  "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
+  "assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}_{{cookiecutter.technology_type|replace(' ', '_')}}",
+  "__output_dir": "Required variable. Do not remove."
+}
