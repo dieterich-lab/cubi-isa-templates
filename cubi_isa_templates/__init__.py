@@ -96,55 +96,6 @@ _TEMPLATES = (
         description="generic RNA sequencing ISA-tab template",
         configuration=load_variables("isatab-generic"),
     ),
-    IsaTabTemplate(
-        name="germline",
-        path=os.path.join(_BASE_DIR, "isatab-germline"),
-        description="germline DNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-germline"),
-    ),
-    IsaTabTemplate(
-        name="mass_cytometry",
-        path=os.path.join(_BASE_DIR, "isatab-mass_cytometry"),
-        description="Mass cytometry ISA-tab template",
-        configuration=load_variables("isatab-mass_cytometry"),
-    ),
-    IsaTabTemplate(
-        name="microarray",
-        path=os.path.join(_BASE_DIR, "isatab-microarray"),
-        description="microarray ISA-tab template",
-        configuration=load_variables("isatab-microarray"),
-    ),
-    IsaTabTemplate(
-        name="ms_meta_biocrates",
-        path=os.path.join(_BASE_DIR, "isatab-ms_meta_biocrates"),
-        description="MS Metabolomics Biocrates kit ISA-tab template",
-        configuration=load_variables("isatab-ms_meta_biocrates"),
-    ),
-    IsaTabTemplate(
-        name="single_cell_rnaseq",
-        path=os.path.join(_BASE_DIR, "isatab-single_cell_rnaseq"),
-        description="single cell RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-single_cell_rnaseq"),
-    ),
-    IsaTabTemplate(
-        name="somatic",
-        path=os.path.join(_BASE_DIR, "isatab-somatic"),
-        description="Somatic sequencing ISA-tab template",
-        configuration=load_variables("isatab-somatic"),
-    ),
-    IsaTabTemplate(
-        name="stem_cell_core_bulk",
-        path=os.path.join(_BASE_DIR, "isatab-stem_cell_core_bulk"),
-        description="Bulk RNA sequencing ISA-tab template from hiPSC for stem cell core projects",
-        configuration=load_variables("isatab-stem_cell_core_bulk"),
-    ),
-    IsaTabTemplate(
-        name="stem_cell_core_sc",
-        path=os.path.join(_BASE_DIR, "isatab-stem_cell_core_sc"),
-        description="Single cell RNA sequencing ISA-tab template from hiPSC for stem cell core "
-        "projects",
-        configuration=load_variables("isatab-stem_cell_core_sc"),
-    ),
 )
 
 #: Known ISA-tab templates.
