@@ -1,36 +1,78 @@
 {
-  "investigation_title": "Investigation Title",
-  "sample_names": "alpha,beta,gamma",
-  "a_measurement_type": [
-      "transcription profiling"
+  "investigation_title": "Descriptive Title",
+  "sample_names": "Sample1,Sample2,Sample3",
+  "measurement_type": [
+      "RNA-seq assay",
+      "direct RNA sequencing assay"
   ],
   "_measurement_types": {
-      "transcription profiling" : {
-         "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
+      "RNA-seq assay" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0001271",
+         "source" : "OBI"
+      },
+      "direct RNA sequencing assay" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0002629",
          "source" : "OBI"
       }
   },
-  "a_technology_type": "nucleotide sequencing",
-  "_technology_types": {
-      "nucleotide sequencing" : {
-         "accession" : "http://purl.obolibrary.org/obo/OBI_0000626",
-         "source" : "OBI"
-      }
-  },
-
-  "lib_kit": [
-    "Illumina TruSeq Stranded mRNA"
+  "technology_type": "RNA-seq",
+  "platform": [
+        "LS454",
+        "ABI_SOLID",
+        "BGISEQ",
+        "CAPILLARY",
+        "COMPLETE_GENOMICS",
+        "DNBSEQ",
+        "ELEMENT",
+        "GENAPSYS",
+        "GENEMIND",
+        "HELICOS",
+        "ILLUMINA",
+        "ION_TORRENT",
+        "OXFORD_NANOPORE",
+        "PACBIO_SMRT",
+        "TAPESTRI",
+        "ULTIMA",
+        "VELA_DIAGNOSTICS"
   ],
+  "instrument": "",
+  "library_source": [
+      "TRANSCRIPTOMIC",
+      "METATRANSCRIPTOMIC",
+      "SYNTHETIC",
+      "VIRAL RNA",
+      "TRANSCRIPTOMIC SINGLE CELL",
+      "OTHER"
+  ],
+  "library_strategy": "{{cookiecutter.technology_type}}",
+  "library_selection": [
+      "PCR",
+      "RT-PCR",
+      "cDNA",
+      "cDNA_randomPriming",
+      "cDNA_oligo_dT",
+      "RACE",
+      "PolyA",
+      "Oligo-dT",
+      "Inverse rRNA",
+      "Size fractionation",
+      "Hybrid selection",
+      "Padlock probes",
+      "RANDOM",
+      "OTHER",
+      "UNSPECIFIED"
+  ],
+  "library_layout": [ "PAIRED", "SINGLE" ],
+  "library_kit": "",
   "organism": [
     "Homo sapiens",
-    "Mus musculus"
+    "Mus musculus",
+    "Drosophila melanogaster",
+    "Saccharomyces cerevisiae",
+    "Caenorhabditis elegans",
+    "Danio rerio",
+    "Rattus norvegicus"
   ],
-  "batch": "1",
-  "_lib_kits": {
-    "Illumina TruSeq Stranded mRNA": {
-      "name": "Illumina TruSeq Stranded mRNA"
-    }
-  },
   "_organisms": {
     "Homo sapiens": {
       "name": "Homo sapiens",
@@ -39,20 +81,32 @@
     "Mus musculus": {
       "name": "Mus musculus",
       "taxon": "10090"
+    },
+    "Drosophila melanogaster": {
+      "name": "Drosophila melanogaster",
+      "taxon": "7227"
+    },
+    "Saccharomyces cerevisiae": {
+      "name": "Saccharomyces cerevisiae",
+      "taxon": "4932"
+    },
+    "Caenorhabditis elegans": {
+      "name": "Caenorhabditis elegans",
+      "taxon": "6239"
+    },
+    "Danio rerio": {
+      "name": "Danio rerio",
+      "taxon": "7955"
+    },
+    "Rattus norvegicus": {
+      "name": "Rattus norvegicus",
+      "taxon": "10116"
     }
   },
-  "instrument": "Illumina NovaSeq 6000",
   "center_name": "",
   "center_contact": "",
-
-  "study_title": "{{cookiecutter.investigation_title}}",
+  "assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}_{{cookiecutter.technology_type|replace(' ', '_')}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|replace('/', '_')}}",
   "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
-  "a_measurement_abbreviation": "{% if cookiecutter.a_measurement_type == 'transcription profiling' %}mRNA_seq{% else %}UNKNOWN{% endif %}",
-  "assay_name": "{{cookiecutter.a_measurement_type|replace(' ', '_')}}_{{cookiecutter.a_technology_type|replace(' ', '_')}}",
-  "sample_type": "x-charite-medgen-blood-book-id",
-  "lib_strategy": "{% if cookiecutter.a_measurement_abbreviation == 'mRNA_seq' %}RNA-seq{% else %}UNKNOWN{% endif %}",
-  "lib_selection": "{% if cookiecutter.a_measurement_abbreviation == 'mRNA_seq' %}PolyA{% else %}UNKNOWN{% endif %}",
-  "lib_layout": [ "PAIRED", "SINGLE" ],
   "__output_dir": "Required variable. Do not remove."
 }

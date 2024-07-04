@@ -83,22 +83,15 @@ def load_variables(template_name, extra=None):
 
 
 #: Known ISA-tab templates (internal, mapping generated below).
-_TEMPLATES = (
-    IsaTabTemplate(
-        name="bulk_rnaseq",
-        path=os.path.join(_BASE_DIR, "isatab-bulk_rnaseq"),
-        description="bulk RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-bulk_rnaseq"),
-    ),
-    IsaTabTemplate(
-        name="generic",
-        path=os.path.join(_BASE_DIR, "isatab-generic"),
-        description="generic RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-generic"),
-    ),
+_TEMPLATES = IsaTabTemplate(
+    name="generic",
+    path=os.path.join(_BASE_DIR, "isatab-generic"),
+    description="generic RNA sequencing ISA-tab template",
+    configuration=load_variables("isatab-generic"),
 )
 
 #: Known ISA-tab templates.
-TEMPLATES = {tpl.name: tpl for tpl in _TEMPLATES}
+# TEMPLATES = {tpl.name: tpl for tpl in _TEMPLATES}
+TEMPLATES = {_TEMPLATES.name: _TEMPLATES}
 
 __version__ = _version.get_versions()["version"]
