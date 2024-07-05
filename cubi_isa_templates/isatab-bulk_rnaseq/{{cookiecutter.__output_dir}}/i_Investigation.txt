@@ -1,16 +1,14 @@
 ONTOLOGY SOURCE REFERENCE
-Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA
-Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO
-Term Source Version	48	35	10	12	570	2.8
-Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology
+Term Source Name	UO	OBI	NCBITAXON	OMIM	HP	ORPHA	CL
+Term Source File	http://data.bioontology.org/ontologies/UO	http://data.bioontology.org/ontologies/OBI	http://data.bioontology.org/ontologies/NCBITAXON	http://data.bioontology.org/ontologies/OMIM	http://data.bioontology.org/ontologies/HP	http://data.bioontology.org/ontologies/ORDO	http://data.bioontology.org/ontologies/CL
+Term Source Version	48	35	10	12	570	2.8	2019-08-12
+Term Source Description	Units of Measurement Ontology	Ontology for Biomedical Investigations	National Center for Biotechnology Information (NCBI) Organismal Classification	Online Mendelian Inheritance in Man	Human Phenotype Ontology	Orphanet Rare Disease Ontology	Cell Ontology
 INVESTIGATION
 Investigation Identifier	""
 Investigation Title	{{cookiecutter.investigation_title}}
 Investigation Description	""
 Investigation Submission Date	""
 Investigation Public Release Date	""
-Comment[Created With Configuration]	/path/to/isa-configurations/bih_studies/bih_bulk_RNAseq
-Comment[Last Opened With Configuration]	bih_bulk_RNAseq
 INVESTIGATION PUBLICATIONS
 Investigation PubMed ID
 Investigation Publication DOI
@@ -74,9 +72,9 @@ Study Protocol Type Term Source REF	""	""	""	""
 Study Protocol Description	""	""	""	""
 Study Protocol URI	""	""	""	""
 Study Protocol Version	""	""	""	""
-Study Protocol Parameters Name	Method	Concentration	Library source;Library strategy;Library selection;Library layout;Library kit;Target insert size;Wet-lab insert size;Barcode kit;Barcode name	Platform;Instrument model;Base quality encoding;Library prefix
-Study Protocol Parameters Name Term Accession Number	""	""	";;;;;;;;"	";;;"
-Study Protocol Parameters Name Term Source REF	""	""	";;;;;;;;"	";;;"
+Study Protocol Parameters Name	""	Concentration measurement	"Provider project ID;Library source;Library selection;Library layout;Barcode sequence;Wet-lab insert size;Requestor contact;Library kit;Barcode name;Provider contact;Concentration measurement;Provider sample ID;Target insert size;Provider name;Requestor project;Requestor sample ID;Barcode kit;Barcode kit catalogue ID;Provider QC status;Library strategy"	"Base quality encoding;Platform;Center contact;Instrument model;Center name"
+Study Protocol Parameters Name Term Accession Number	""	""	";;;;;;;;;;;;;;;;;;;"	";;;;"
+Study Protocol Parameters Name Term Source REF	""	""	";;;;;;;;;;;;;;;;;;;"	";;;;"
 Study Protocol Components Name	""	""	""	""
 Study Protocol Components Type	""	""	""	""
 Study Protocol Components Type Term Accession Number	""	""	""	""

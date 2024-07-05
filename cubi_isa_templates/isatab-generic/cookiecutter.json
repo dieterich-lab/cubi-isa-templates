@@ -2,20 +2,15 @@
   "investigation_title": "Descriptive Title",
   "sample_names": "Sample1,Sample2,Sample3",
   "measurement_type": [
-      "RNA-seq assay",
-      "direct RNA sequencing assay"
+      "transcriptome profiling"
   ],
   "_measurement_types": {
-      "RNA-seq assay" : {
-         "accession" : "http://purl.obolibrary.org/obo/OBI_0001271",
-         "source" : "OBI"
-      },
-      "direct RNA sequencing assay" : {
-         "accession" : "http://purl.obolibrary.org/obo/OBI_0002629",
+      "transcriptome profiling" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
          "source" : "OBI"
       }
   },
-  "technology_type": "RNA-seq",
+  "technology_type": "nucleotide sequencing",
   "platform": [
         "LS454",
         "ABI_SOLID",
@@ -44,7 +39,7 @@
       "TRANSCRIPTOMIC SINGLE CELL",
       "OTHER"
   ],
-  "library_strategy": "{{cookiecutter.technology_type}}",
+  "library_strategy": "RNA-seq",
   "library_selection": [
       "PCR",
       "RT-PCR",
