@@ -10,7 +10,7 @@
          "source" : "OBI"
       }
   },
-  "technology_type": "nucleotide sequencing",
+  "technology_type": [ "nucleotide sequencing" ],
   "platform": [
         "LS454",
         "ABI_SOLID",
