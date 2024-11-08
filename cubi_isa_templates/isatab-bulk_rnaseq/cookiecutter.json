@@ -96,6 +96,10 @@
     "Rattus norvegicus": {
       "name": "Rattus norvegicus",
       "taxon": "10116"
+    },
+    "ECM virus": {
+      "name": "ECM virus",
+      "taxon": "159464"
     }
   },
   "center_name": "",
