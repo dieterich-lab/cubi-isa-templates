@@ -10,28 +10,14 @@
          "source" : "OBI"
       }
   },
-  "technology_type": [ "nucleotide sequencing" ],
+  "technology_type": [ "LC-MS/MS" ],
   "platform": [
-        "LS454",
-        "ABI_SOLID",
-        "BGISEQ",
-        "CAPILLARY",
-        "COMPLETE_GENOMICS",
-        "DNBSEQ",
-        "ELEMENT",
-        "GENAPSYS",
-        "GENEMIND",
-        "HELICOS",
-        "ILLUMINA",
-        "ION_TORRENT",
-        "OXFORD_NANOPORE",
-        "PACBIO_SMRT",
-        "TAPESTRI",
-        "ULTIMA",
-        "VELA_DIAGNOSTICS"
+        "Agilent",
+        "Waters",
+        "Shimadzu"
   ],
   "instrument": "",
-  "library_source": [
+  "sample_source": [
       "TRANSCRIPTOMIC",
       "METATRANSCRIPTOMIC",
       "SYNTHETIC",
@@ -39,8 +25,11 @@
       "TRANSCRIPTOMIC SINGLE CELL",
       "OTHER"
   ],
-  "library_strategy": "RNA-seq",
-  "library_selection": [
+  "measurement_mode": "RNA-seq",
+  "sample_purification": [
+      "PAGE purification",
+      "No additional",
+      "Ethanol precipitation",
       "PCR",
       "RT-PCR",
       "cDNA",
@@ -57,8 +46,7 @@
       "OTHER",
       "UNSPECIFIED"
   ],
-  "library_layout": [ "PAIRED", "SINGLE" ],
-  "library_kit": "",
+  "purification_kit": "",
   "organism": [
     "Homo sapiens",
     "Mus musculus",
@@ -105,7 +93,7 @@
   },
   "center_name": "",
   "center_contact": "",
-  "assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}_{{cookiecutter.technology_type|replace(' ', '_')}}",
+  "assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}_{{cookiecutter.technology_type|replace(' ', '_')|replace('/', '_')}}",
   "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|replace('/', '_')}}",
   "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
   "__output_dir": "Required variable. Do not remove."

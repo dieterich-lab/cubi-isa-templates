@@ -91,10 +91,10 @@ _TEMPLATES = (
         configuration=load_variables("isatab-bulk_rnaseq"),
     ),
     IsaTabTemplate(
-        name="generic",
-        path=os.path.join(_BASE_DIR, "isatab-generic"),
-        description="generic RNA sequencing ISA-tab template",
-        configuration=load_variables("isatab-generic"),
+        name="ms_rna",
+        path=os.path.join(_BASE_DIR, "isatab-ms_rna"),
+        description="generic LC-MS/MS (RNA) ISA-tab template",
+        configuration=load_variables("isatab-ms_rna"),
     ),
 )
 

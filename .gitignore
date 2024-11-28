@@ -38,3 +38,6 @@ nosetests.xml
 htmlcov
 coverage.xml
 .pytest_cache
+
+# local
+local/
