@@ -96,6 +96,12 @@ _TEMPLATES = (
         description="generic LC-MS/MS (RNA) ISA-tab template",
         configuration=load_variables("isatab-ms_rna"),
     ),
+    IsaTabTemplate(
+        name="smfret",
+        path=os.path.join(_BASE_DIR, "isatab-smfret"),
+        description="generic smFRET (RNA) ISA-tab template",
+        configuration=load_variables("isatab-smfret"),
+    ),
 )
 
 #: Known ISA-tab templates.

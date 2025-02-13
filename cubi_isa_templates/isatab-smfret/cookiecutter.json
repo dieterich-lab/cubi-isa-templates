@@ -1,0 +1,100 @@
+{
+  "investigation_title": "Descriptive Title",
+  "sample_names": "Sample1,Sample2,Sample3",
+  "measurement_type": [
+      "transcriptome profiling"
+  ],
+  "_measurement_types": {
+      "transcriptome profiling" : {
+         "accession" : "http://purl.obolibrary.org/obo/OBI_0000424",
+         "source" : "OBI"
+      }
+  },
+  "technology_type": [ "smFRET" ],
+  "instrument": "",
+  "sample_source": [
+      "TRANSCRIPTOMIC",
+      "METATRANSCRIPTOMIC",
+      "SYNTHETIC",
+      "VIRAL RNA",
+      "TRANSCRIPTOMIC SINGLE CELL",
+      "OTHER"
+  ],
+  "measurement_mode": "RNA-seq",
+  "sample_purification": [
+      "PAGE purification",
+      "No additional",
+      "Ethanol precipitation",
+      "PCR",
+      "RT-PCR",
+      "cDNA",
+      "cDNA_randomPriming",
+      "cDNA_oligo_dT",
+      "RACE",
+      "PolyA",
+      "Oligo-dT",
+      "Inverse rRNA",
+      "Size fractionation",
+      "Hybrid selection",
+      "Padlock probes",
+      "RANDOM",
+      "OTHER",
+      "UNSPECIFIED"
+  ],
+  "purification_kit": "",
+  "organism": [
+    "Homo sapiens",
+    "Mus musculus",
+    "Drosophila melanogaster",
+    "Saccharomyces cerevisiae",
+    "Caenorhabditis elegans",
+    "Danio rerio",
+    "Rattus norvegicus",
+    "ECM virus",
+    "Spodoptera frugiperda"
+  ],
+  "_organisms": {
+    "Homo sapiens": {
+      "name": "Homo sapiens",
+      "taxon": "9606"
+    },
+    "Mus musculus": {
+      "name": "Mus musculus",
+      "taxon": "10090"
+    },
+    "Drosophila melanogaster": {
+      "name": "Drosophila melanogaster",
+      "taxon": "7227"
+    },
+    "Saccharomyces cerevisiae": {
+      "name": "Saccharomyces cerevisiae",
+      "taxon": "4932"
+    },
+    "Caenorhabditis elegans": {
+      "name": "Caenorhabditis elegans",
+      "taxon": "6239"
+    },
+    "Danio rerio": {
+      "name": "Danio rerio",
+      "taxon": "7955"
+    },
+    "Rattus norvegicus": {
+      "name": "Rattus norvegicus",
+      "taxon": "10116"
+    },
+    "ECM virus": {
+      "name": "ECM virus",
+      "taxon": "159464"
+    },
+    "Spodoptera frugiperda": {
+      "name": "Spodoptera frugiperda",
+      "taxon": "7108"
+    }
+  },
+  "center_name": "",
+  "center_contact": "",
+  "assay_name": "{{cookiecutter.measurement_type|replace(' ', '_')}}_{{cookiecutter.technology_type|replace(' ', '_')|replace('/', '_')}}",
+  "s_file_name": "{{cookiecutter.investigation_title|replace(' ', '_')|replace('/', '_')}}",
+  "assay_prefix": "{{cookiecutter.s_file_name|lower}}",
+  "__output_dir": "Required variable. Do not remove."
+}
