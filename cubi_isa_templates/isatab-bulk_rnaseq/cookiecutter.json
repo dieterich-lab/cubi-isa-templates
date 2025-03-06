@@ -68,6 +68,7 @@
     "Danio rerio",
     "Rattus norvegicus",
     "ECM virus",
+    "Spodoptera frugiperda",
     "Corynebacterium amycolatum",
     "Enterococcus faecalis ATCC 29212",
     "Haemophilus influenzae",
@@ -75,7 +76,8 @@
     "Pseudomonas aeruginosa UCBPP-PA14",
     "Staphylococcus aureus",
     "Staphylococcus epidermidis",
-    "Streptococcus sanguinis SK36"
+    "Streptococcus sanguinis SK36",
+    "Escherichia coli"
   ],
   "_organisms": {
     "Homo sapiens": {
@@ -110,6 +112,10 @@
       "name": "ECM virus",
       "taxon": "159464"
     },
+    "Spodoptera frugiperda": {
+      "name": "Spodoptera frugiperda",
+      "taxon": "7108"
+    },
     "Corynebacterium amycolatum": {
       "name": "Corynebacterium amycolatum",
       "taxon": "43765" 
@@ -141,6 +147,10 @@
     "Streptococcus sanguinis SK36": {
       "name": "Streptococcus sanguinis SK36",
       "taxon": "388919" 
+    },
+    "Escherichia coli": {
+      "name": "Escherichia coli",
+      "taxon": "562"
     }
   },
   "center_name": "",

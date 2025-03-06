@@ -51,7 +51,16 @@
     "Danio rerio",
     "Rattus norvegicus",
     "ECM virus",
-    "Spodoptera frugiperda"
+    "Spodoptera frugiperda",
+    "Corynebacterium amycolatum",
+    "Enterococcus faecalis ATCC 29212",
+    "Haemophilus influenzae",
+    "Micrococcus gluteus NCTC 2665",
+    "Pseudomonas aeruginosa UCBPP-PA14",
+    "Staphylococcus aureus",
+    "Staphylococcus epidermidis",
+    "Streptococcus sanguinis SK36",
+    "Escherichia coli"
   ],
   "_organisms": {
     "Homo sapiens": {
@@ -89,6 +98,42 @@
     "Spodoptera frugiperda": {
       "name": "Spodoptera frugiperda",
       "taxon": "7108"
+    },
+    "Corynebacterium amycolatum": {
+      "name": "Corynebacterium amycolatum",
+      "taxon": "43765" 
+    },
+    "Enterococcus faecalis ATCC 29212": {
+      "name": "Enterococcus faecalis ATCC 29212",
+      "taxon": "1201292" 
+    },
+    "Haemophilus influenzae": {
+      "name": "Haemophilus influenzae",
+      "taxon": "727" 
+    },
+    "Micrococcus gluteus NCTC 2665": {
+      "name": "Micrococcus gluteus NCTC 2665",
+      "taxon": "465515" 
+    },
+    "Pseudomonas aeruginosa UCBPP-PA14": {
+      "name": "Pseudomonas aeruginosa UCBPP-PA14",
+      "taxon": "208963" 
+    },
+    "Staphylococcus aureus": {
+      "name": "Staphylococcus aureus",
+      "taxon": "1280" 
+    },
+    "Staphylococcus epidermidis": {
+      "name": "Staphylococcus epidermidis",
+      "taxon": "1282" 
+    },
+    "Streptococcus sanguinis SK36": {
+      "name": "Streptococcus sanguinis SK36",
+      "taxon": "388919" 
+    },
+    "Escherichia coli": {
+      "name": "Escherichia coli",
+      "taxon": "562"
     }
   },
   "center_name": "",
