@@ -46,6 +46,7 @@
       "cDNA",
       "cDNA_randomPriming",
       "cDNA_oligo_dT",
+      "Direct RNA",
       "RACE",
       "PolyA",
       "Oligo-dT",
